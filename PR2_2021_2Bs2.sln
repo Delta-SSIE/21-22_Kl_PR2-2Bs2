@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Hello-world", "01-Hello-world\01-Hello-world.csproj", "{BB9A469D-15F0-46C2-B00B-FF2E833964AF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cviceni-replit", "Cviceni-replit", "{08F31F11-804B-4DBD-BA71-8B00CA96A24B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "replit-01-OOP-010-Role", "replit-01-OOP-010-Role\replit-01-OOP-010-Role.csproj", "{FFD72537-A366-4815-BD40-2BF6C588D4B3}"
@@ -19,9 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "replit-01-OOP-040-test-vyro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{DCF9930A-8416-49DF-8D88-ECACA0B60190}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-01-hello-world", "WPF-01-hello-world\WPF-01-hello-world.csproj", "{913512BD-D7EA-4B34-9049-FF6CE2C0D91D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-01-Hello-world", "WPF-01-hello-world\WPF-01-Hello-world.csproj", "{913512BD-D7EA-4B34-9049-FF6CE2C0D91D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-02-Scitadlo", "wpf-02-Scitadlo\wpf-02-Scitadlo.csproj", "{E6579E43-C81B-4111-8E65-623B3B7724D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-02-Scitadlo", "wpf-02-Scitadlo\WPF-02-Scitadlo.csproj", "{E6579E43-C81B-4111-8E65-623B3B7724D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "replit-01-OOP-070-Loop", "replit-01-OOP-070-Loop\replit-01-OOP-070-Loop.csproj", "{5A5D1AC1-9436-4CBA-BA07-572F997462E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "replit-01-OOP-070-Loop-L2-generic", "replit-01-OOP-070-Loop-L2-generic\replit-01-OOP-070-Loop-L2-generic.csproj", "{38B5E315-E464-4713-BCC1-8CE843993B61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "replit-01-OOP-060-Paginator", "replit-01-OOP-060-Paginator\replit-01-OOP-060-Paginator.csproj", "{15D97108-497E-4E0F-9E21-3C35578A286E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +33,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BB9A469D-15F0-46C2-B00B-FF2E833964AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB9A469D-15F0-46C2-B00B-FF2E833964AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB9A469D-15F0-46C2-B00B-FF2E833964AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB9A469D-15F0-46C2-B00B-FF2E833964AF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FFD72537-A366-4815-BD40-2BF6C588D4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FFD72537-A366-4815-BD40-2BF6C588D4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD72537-A366-4815-BD40-2BF6C588D4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,6 +61,18 @@ Global
 		{E6579E43-C81B-4111-8E65-623B3B7724D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6579E43-C81B-4111-8E65-623B3B7724D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6579E43-C81B-4111-8E65-623B3B7724D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5D1AC1-9436-4CBA-BA07-572F997462E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5D1AC1-9436-4CBA-BA07-572F997462E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5D1AC1-9436-4CBA-BA07-572F997462E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5D1AC1-9436-4CBA-BA07-572F997462E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B5E315-E464-4713-BCC1-8CE843993B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B5E315-E464-4713-BCC1-8CE843993B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B5E315-E464-4713-BCC1-8CE843993B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B5E315-E464-4713-BCC1-8CE843993B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15D97108-497E-4E0F-9E21-3C35578A286E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D97108-497E-4E0F-9E21-3C35578A286E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D97108-497E-4E0F-9E21-3C35578A286E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D97108-497E-4E0F-9E21-3C35578A286E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +85,9 @@ Global
 		{F74FF26B-708D-45CF-8AB3-F93016342826} = {08F31F11-804B-4DBD-BA71-8B00CA96A24B}
 		{913512BD-D7EA-4B34-9049-FF6CE2C0D91D} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
 		{E6579E43-C81B-4111-8E65-623B3B7724D1} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
+		{5A5D1AC1-9436-4CBA-BA07-572F997462E5} = {08F31F11-804B-4DBD-BA71-8B00CA96A24B}
+		{38B5E315-E464-4713-BCC1-8CE843993B61} = {08F31F11-804B-4DBD-BA71-8B00CA96A24B}
+		{15D97108-497E-4E0F-9E21-3C35578A286E} = {08F31F11-804B-4DBD-BA71-8B00CA96A24B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB2D4F60-3302-453E-8D98-D64EC35567AA}
