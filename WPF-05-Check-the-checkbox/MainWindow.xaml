@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPF_05_Check_the_checkbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_05_Check_the_checkbox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="179" Width="186">
+    <Grid>
+        <CheckBox x:Name="CheckboxInput" Content="CheckBox" HorizontalAlignment="Left" Margin="46,30,0,0" VerticalAlignment="Top" Checked="CheckboxInput_Checked" Unchecked="CheckboxInput_Checked"/>
+        <Button x:Name="ZaskrtniBtn" Content="Zaškrtni" HorizontalAlignment="Left" Margin="46,62,0,0" VerticalAlignment="Top" Width="59" Click="ZaskrtniBtn_Click"/>
+        <Button x:Name="OdskrtniBtn" Content="Odškrtni" HorizontalAlignment="Left" Margin="46,88,0,0" VerticalAlignment="Top" Width="59" Click="OdskrtniBtn_Click"/>
+        <Button x:Name="ZmenStavBtn" Content="Změň" HorizontalAlignment="Left" Margin="127,62,0,0" VerticalAlignment="Top" Height="46" Click="ZmenStavBtn_Click"/>
+
+    </Grid>
+</Window>
