@@ -27,11 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "replit-01-OOP-070-Loop-L2-g
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "replit-01-OOP-060-Paginator", "replit-01-OOP-060-Paginator\replit-01-OOP-060-Paginator.csproj", "{15D97108-497E-4E0F-9E21-3C35578A286E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-03-Messagebox", "WPF-03-Messagebox\WPF-03-Messagebox.csproj", "{371F81D2-2A87-4B1F-AC54-48C279F760E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-03-Messagebox", "WPF-03-Messagebox\WPF-03-Messagebox.csproj", "{371F81D2-2A87-4B1F-AC54-48C279F760E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-04-O-Deset-vic", "WPF-04-O-Deset-vic\WPF-04-O-Deset-vic.csproj", "{773A0F21-6B79-4C94-8D3C-A0DA9A0DBF3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-04-O-Deset-vic", "WPF-04-O-Deset-vic\WPF-04-O-Deset-vic.csproj", "{773A0F21-6B79-4C94-8D3C-A0DA9A0DBF3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-05-Check-the-checkbox", "WPF-05-Check-the-checkbox\WPF-05-Check-the-checkbox.csproj", "{18F2DE78-EE30-456C-ABC7-3B832334E2C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-05-Check-the-checkbox", "WPF-05-Check-the-checkbox\WPF-05-Check-the-checkbox.csproj", "{18F2DE78-EE30-456C-ABC7-3B832334E2C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-06-Omalovanky-v1", "WPF-06-Omalovanky-v1\WPF-06-Omalovanky-v1.csproj", "{0FE8BB89-E93E-4CD8-B657-52E3234A6038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,10 @@ Global
 		{18F2DE78-EE30-456C-ABC7-3B832334E2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18F2DE78-EE30-456C-ABC7-3B832334E2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18F2DE78-EE30-456C-ABC7-3B832334E2C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE8BB89-E93E-4CD8-B657-52E3234A6038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE8BB89-E93E-4CD8-B657-52E3234A6038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE8BB89-E93E-4CD8-B657-52E3234A6038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE8BB89-E93E-4CD8-B657-52E3234A6038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +115,7 @@ Global
 		{371F81D2-2A87-4B1F-AC54-48C279F760E1} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
 		{773A0F21-6B79-4C94-8D3C-A0DA9A0DBF3A} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
 		{18F2DE78-EE30-456C-ABC7-3B832334E2C3} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
+		{0FE8BB89-E93E-4CD8-B657-52E3234A6038} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB2D4F60-3302-453E-8D98-D64EC35567AA}
