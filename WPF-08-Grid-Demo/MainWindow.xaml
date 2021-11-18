@@ -1,0 +1,51 @@
+﻿<Window x:Class="WPF_08_Grid_Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_08_Grid_Demo"
+        mc:Ignorable="d"
+        Title="Co všechno umí &lt;Grid&gt;" Height="450" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+        
+            <Button Grid.Column="0">Button 1</Button>
+            <Button Grid.Column="1">Button 2 with very looooooooooong text</Button>
+            <Button Grid.Column="2">Button 3</Button>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Left pane"
+                       Grid.Column="0"
+                       FontSize="30"
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center"
+                       />
+
+            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" ResizeDirection="Columns"/>
+
+            <TextBlock Text="Right pane"
+                       Grid.Column="2"
+                       FontSize="30"
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center"                       
+                       />
+        </Grid>
+    </Grid>
+</Window>

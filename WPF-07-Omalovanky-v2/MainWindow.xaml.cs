@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_06_Omalovanky_v1
+namespace WPF_07_Omalovanky_v2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,10 +25,11 @@ namespace WPF_06_Omalovanky_v1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void anyBtn_Click(object sender, RoutedEventArgs e)
         {
-            Textik.Background = Brushes.Red;
-            Textik.Foreground = Brushes.White;
+            Button pressedBtn = (Button)sender;
+            Textik.Foreground = pressedBtn.Foreground;
+            Textik.Background = pressedBtn.Background;
         }
     }
 }
