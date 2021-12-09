@@ -20,9 +20,28 @@ namespace WPF_13_Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string currentText;
         public MainWindow()
         {
             InitializeComponent();
+            currentText = "0";
+        }
+
+        private void NumberBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string currentBtn = ((Button)sender).Content.ToString();
+
+            if (currentText == "0")
+                currentText = currentBtn;
+            else
+                currentText += currentBtn;
+
+            Render();
+        }
+
+        private void Render()
+        {
+            DisplayTB.Text = currentText;
         }
     }
 }
