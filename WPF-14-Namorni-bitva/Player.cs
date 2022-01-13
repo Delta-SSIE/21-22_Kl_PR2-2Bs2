@@ -12,6 +12,8 @@ namespace WPF_14_Namorni_bitva
         private int _boatCount;
         private TileState[,] _map;
 
+        public int Wrecks { get; private set; } = 0;
+
         public Player(int mapSize, int boatCount)
         {
             if (mapSize < 1 || boatCount < 1)
@@ -19,14 +21,8 @@ namespace WPF_14_Namorni_bitva
 
             _mapSize = mapSize;
             _boatCount = boatCount;
-        }
 
-        public bool IsFinished
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            CreateMap();
         }
 
         // vygenerovat mapu
@@ -83,11 +79,92 @@ namespace WPF_14_Namorni_bitva
             }
         }
 
-        // zpracovat výstřel
+
+        /// <summary>
+        /// Modifies map - marks shot at coordinates
+        /// </summary>
+        /// <param name="target"></param>
+        /// <returns>True on hit, false otherwise</returns>
+        public bool HandleShot (Coordinates target)
+        {
+            TileState state = _map[target.X, target.Y]; //co tam je?
+
+            switch(state)
+            {
+                case TileState.Boat:
+                    _map[target.X, target.Y] = TileState.Wreck;
+                    Wrecks++;
+                    return true;
+
+                case TileState.Water:
+                    _map[target.X, target.Y] = TileState.Shot;
+                    break;
+            }
+
+            return false;
+
+        }
+
         // pro počítač - vymyslet, kam střílet
+        public Coordinates RandomTarget(TileState[,] opponentMap)
+        {
+            Random rnd = RndHelper.GetInstance();
+
+            Coordinates target = new Coordinates();
+
+            do
+            {
+                target.X = rnd.Next(_mapSize);
+                target.Y = rnd.Next(_mapSize);
+            } 
+            while (opponentMap[target.X, target.Y] != TileState.Water);
+
+            return target;
+        }
+
 
         // poskytnout mapu pro zobrazení
             // pro mne
             // pro protivníka
+        public TileState[,] PublicMap
+        {
+            get
+            {
+                //alokuju novou stejně velkou mapu
+                TileState[,] publicMap = new TileState[_mapSize, _mapSize];
+                
+                for (int x = 0; x < _mapSize; x++)
+                {
+                    for (int y = 0; y < _mapSize; y++)
+                    {
+                        //projdu vše, ale místo neodkrytých lodí zapíšu prázdno
+                        TileState state = _map[x, y];
+                        if (state == TileState.Boat)
+                            state = TileState.Water;
+
+                        publicMap[x, y] = state;
+                    }
+                }
+
+                //vrátím se zamaskovanými loďmi
+                return publicMap;
+            }
+        }
+
+        public TileState[,] PrivateMap
+        {
+            get
+            {
+                return (TileState[,])_map.Clone();
+            }
+        }
+
+        public bool IsAlive
+        {
+            get
+            {
+                return Wrecks < _boatCount;
+            }
+        }
     }
 }

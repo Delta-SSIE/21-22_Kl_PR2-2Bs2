@@ -5,8 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_14_Namorni_bitva"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Naval Battle" Height="450" Width="800">
 
+    <Window.Resources>
+        <Style x:Key="SeaTile"
+               TargetType="Rectangle">
+            <Setter Property="Margin" Value="1" />
+            <Setter Property="Fill" Value="LightSeaGreen" />
+        </Style>
+
+        <Style x:Key="ShotTile" TargetType="Rectangle" BasedOn="{StaticResource SeaTile}">
+            <Setter Property="Fill" Value="DarkSeaGreen" />
+        </Style>
+        
+        <Style x:Key="BoatTile" TargetType="Rectangle" BasedOn="{StaticResource SeaTile}">
+            <Setter Property="Fill" Value="DarkMagenta" />
+        </Style>
+        
+        <Style x:Key="WreckTile" TargetType="Rectangle" BasedOn="{StaticResource SeaTile}">
+            <Setter Property="Fill" Value="OrangeRed" />
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Label x:Name="PlayerScoreLbl" 
+               Content="PlayerScore" 
+               Grid.Column="0" 
+               Grid.Row="0" 
+               FontSize="16"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               />
+        <Label x:Name="ComputerScoreLbl" 
+               Content="ComputerScore" 
+               Grid.Column="1" 
+               Grid.Row="0" 
+               FontSize="16"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               />
+
+        <Grid x:Name="PlayerDisplay"
+              Grid.Column="0"
+              Grid.Row="1"
+              Margin="5"
+              />
+        <Grid x:Name="ComputerDisplay"
+              Grid.Column="1"
+              Grid.Row="1"
+              Margin="5"
+              />        
     </Grid>
+
+
+
 </Window>
