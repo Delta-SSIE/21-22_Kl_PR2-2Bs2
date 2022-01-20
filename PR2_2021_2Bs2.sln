@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-12-TextProhlizec", "WPF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-13-Calculator", "WPF-13-Calculator\WPF-13-Calculator.csproj", "{42E6C2AE-0976-4132-B756-C8CEF42CAC71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-14-Namorni-bitva", "WPF-14-Namorni-bitva\WPF-14-Namorni-bitva.csproj", "{BC92F088-03D8-47E8-BDEB-00EDFC359EFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-14-Namorni-bitva", "WPF-14-Namorni-bitva\WPF-14-Namorni-bitva.csproj", "{BC92F088-03D8-47E8-BDEB-00EDFC359EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-15-DispatcherTimer", "WPF-15-DispatcherTimer\WPF-15-DispatcherTimer.csproj", "{24B59693-217A-4D3A-831D-1FDC574B8C2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,6 +147,10 @@ Global
 		{BC92F088-03D8-47E8-BDEB-00EDFC359EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC92F088-03D8-47E8-BDEB-00EDFC359EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC92F088-03D8-47E8-BDEB-00EDFC359EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B59693-217A-4D3A-831D-1FDC574B8C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B59693-217A-4D3A-831D-1FDC574B8C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B59693-217A-4D3A-831D-1FDC574B8C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B59693-217A-4D3A-831D-1FDC574B8C2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,6 +178,7 @@ Global
 		{259A19CC-F56D-4FE6-9917-6A453D166D14} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
 		{42E6C2AE-0976-4132-B756-C8CEF42CAC71} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
 		{BC92F088-03D8-47E8-BDEB-00EDFC359EFF} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
+		{24B59693-217A-4D3A-831D-1FDC574B8C2A} = {DCF9930A-8416-49DF-8D88-ECACA0B60190}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB2D4F60-3302-453E-8D98-D64EC35567AA}
