@@ -6,4 +6,8 @@
     <RootNamespace>replit_01_OOP_070_Loop_L2_generic</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\koupja\source\repos\2021_PR2_2Bs2\replit-03-OOP2-020-Pocitadlo\replit-03-OOP2-020-Pocitadlo.csproj" />
+  </ItemGroup>
+
 </Project>
