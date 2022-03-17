@@ -8,8 +8,8 @@ namespace replit_03_OOP2_060_Iface_Utvary
         {
             Obdelnik o = new Obdelnik(10, 5);
             Ctverec c = new Ctverec(5);
-            Popis(o);
-            Popis(c);
+            Trojuhelnik t = new Trojuhelnik(3, 4, 5);
+            Kruh k = new Kruh(2);
 
         }
 
