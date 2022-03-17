@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace replit_03_OOP2_060_Iface_Utvary
 {
-    class Obdelnik
+    class Obdelnik : IUtvar
     {
         public double StranaA { get; private set; }
         public double StranaB { get; private set; }
 
+        public virtual string Nazev { get => "obdélník"; }
         public Obdelnik(double stranaA, double stranaB)
         {
             StranaA = stranaA;
@@ -27,7 +28,7 @@ namespace replit_03_OOP2_060_Iface_Utvary
         }
         public override string ToString()
         {
-            return $"Obdélník {StranaA} x {StranaB}.";
+            return $"{Nazev} o stranách {StranaA} x {StranaB}.";
         }
     }
 }

@@ -12,6 +12,7 @@ namespace replit_03_OOP2_060_Iface_Utvary
         {
         }
 
+        public override string Nazev { get => "čtverec"; }
         public override string ToString()
         {
             return $"Čtverec o straně {StranaA}";
