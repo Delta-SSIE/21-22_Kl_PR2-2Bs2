@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPF_18_Nove_okno.Dialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_18_Nove_okno"
+        mc:Ignorable="d"
+        Title="Dialog" Height="222" Width="296">
+    <Grid>
+        <Label x:Name="Otazka" Content="Kdo začne?" HorizontalAlignment="Left" Margin="60,89,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="HracBtn" Content="Hráč" HorizontalAlignment="Left" Margin="71,147,0,0" VerticalAlignment="Top" Click="Button_Click" />
+        <Button x:Name="PocitacBtn" Content="Počítač" HorizontalAlignment="Left" Margin="136,147,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button x:Name="NahodaBtn" Content="Náhodně" HorizontalAlignment="Left" Margin="200,147,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Window>
