@@ -85,9 +85,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-19-Konfigurace", "WPF-1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Staticky-model-pisek", "Staticky-model-pisek\Staticky-model-pisek.csproj", "{91266688-E975-4052-B81F-670458730BF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "replit-03-OOP2-070-IComparable-Body", "replit-03-OOP2-070-IComparable-Body\replit-03-OOP2-070-IComparable-Body.csproj", "{1E0105F3-4444-4925-A893-23A064092853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "replit-03-OOP2-070-IComparable-Body", "replit-03-OOP2-070-IComparable-Body\replit-03-OOP2-070-IComparable-Body.csproj", "{1E0105F3-4444-4925-A893-23A064092853}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "replit-03-OOP2-080-IComparable-BMI", "replit-03-OOP2-080-IComparable-BMI\replit-03-OOP2-080-IComparable-BMI.csproj", "{775D0363-67A4-460C-B9AB-212B22F61564}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "replit-03-OOP2-080-IComparable-BMI", "replit-03-OOP2-080-IComparable-BMI\replit-03-OOP2-080-IComparable-BMI.csproj", "{775D0363-67A4-460C-B9AB-212B22F61564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMath", "MyMath\MyMath.csproj", "{7CD469FD-A446-4D0E-9DDC-E827ED328F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseMyMath", "UseMyMath\UseMyMath.csproj", "{36843E05-4443-4F9C-9FEE-F70A4B525A0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMathTests", "MyMathTests\MyMathTests.csproj", "{6E8799A6-CED2-4A25-85C5-59AA9FEBB607}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -255,6 +261,18 @@ Global
 		{775D0363-67A4-460C-B9AB-212B22F61564}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{775D0363-67A4-460C-B9AB-212B22F61564}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{775D0363-67A4-460C-B9AB-212B22F61564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD469FD-A446-4D0E-9DDC-E827ED328F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD469FD-A446-4D0E-9DDC-E827ED328F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD469FD-A446-4D0E-9DDC-E827ED328F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD469FD-A446-4D0E-9DDC-E827ED328F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36843E05-4443-4F9C-9FEE-F70A4B525A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36843E05-4443-4F9C-9FEE-F70A4B525A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36843E05-4443-4F9C-9FEE-F70A4B525A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36843E05-4443-4F9C-9FEE-F70A4B525A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E8799A6-CED2-4A25-85C5-59AA9FEBB607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8799A6-CED2-4A25-85C5-59AA9FEBB607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8799A6-CED2-4A25-85C5-59AA9FEBB607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8799A6-CED2-4A25-85C5-59AA9FEBB607}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
